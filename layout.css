@@ -1,0 +1,144 @@
+/*mobil first(muotoillaan html-sivu mobilli -näkymään ja sitten mahdollisiin näkynaan*/
+
+html {
+  font-size: 62.5%; /*base font size : 62.5 =10 px*/
+  background-color: white;
+}
+body {
+  margin: 1rem;
+  font-family: "Tilt Neon", cursive;
+  max-width: 1024px;
+  background-color: white;
+}
+h1,
+h2,
+h3,
+p,
+pre,
+ul,
+section {
+  margin-block-end: 1rem;
+}
+section {
+  background-color: #bbddee;
+  padding: 1rem;
+  
+}
+#box2 {
+    border: solid black 1px;
+}
+#box3{
+    border: solid black 1px;
+}
+
+
+h1 {
+  font-size: 3.2rem;
+}
+h2 {
+  font-size: 2.8rem;
+}
+
+#box2 h2 {
+  background-color: #89aabb;
+  padding: 1rem;
+  text-align: right;
+  margin-block-start: -1rem;
+  margin-inline-end: -1rem;
+  text-transform: lowercase;
+  letter-spacing: 3px;
+}
+
+h3 {
+  font-size: 2.4rem;
+}
+p {
+  font-size: 1.6rem;
+}
+pre {
+  font-size: 1.6rem;
+  font-family: "Courier New", Courier, monospace;
+  padding-inline-start: 1rem;
+}
+ul {
+  font-size: 1.6rem;
+}
+/* Class-tyyppiset säänöt*/
+.iso-kirjain {
+  float: left;
+  font-size: 500%;
+  width: 1.2em;
+  text-align: center;
+  padding: 0.1em 0.1em 0;
+  background-color: #556688;
+  color: white;
+  border: solid white;
+  border-width: 0 0.2em 0.2em 0;
+  margin: 0 0.5em 0.2em 0;
+  margin-block-start: -1rem;
+  margin-inline-start: -1rem;
+}
+#pinkkukuva-vasen-ylanurkka {
+  float: left;
+  margin: -1rem 2rem 2rem -1rem;
+  display: block; /*kuvasta responsiivinen*/
+  width: 9rem; /*määrittelee kuvan leveydeksi 90px*/
+  background-color: white;
+}
+#pinkkukuva-vasen-ylanurkka img {
+  max-width: 100%; /*kuvasta responsiivinen*/
+}
+/* 3. laatikon bannerit paikoillen*/
+
+#box3 .banner1 {
+  margin-block-start: -11px;
+  margin-inline-start: -11px;
+  border: solid black 1px;
+  border-block-start: 0;
+  border-inline-start: 0;
+  background-color: white;
+  padding: 1rem;
+}
+#box3 .banner2 {
+  float: right;
+  width: 25%;
+  text-align: left;
+  font-size: 140%;
+  font-weight: bold;
+  font-style: italic;
+  padding: 1em;
+  text-indent: -0.5em;
+  background: white;
+  color: black;
+  border: solid black 1px;
+  border-width: 1px 0 1px 1px;
+  margin: 0.2em -1px 0.2em 0.5em;
+  margin-inline-end: -1rem;
+}
+
+/*tablet-ja suurenmmat näkymät*/
+
+@media only screen and (min-width: 426px) 
+{
+  body {
+    background-color:white;
+    
+  }
+  #box3 .banner1 {
+    background-color: white;
+    padding: 1rem;
+    width: 40rem;
+    float: left;
+    margin-inline-end: 2rem;
+    margin-block-end: 2rem;
+  }
+}
+#box3 h2 {
+  background-color: #89aabb;
+  padding: 1rem;
+  text-align: right;
+  margin-block-start: -1rem;
+  margin-inline-end: -1rem;
+  text-transform: lowercase;
+  letter-spacing: 3px;
+}
